@@ -1138,16 +1138,19 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#1F1F1F', color: 'white', padding: '80px 0 40px' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 32px' }}>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            gap: '48px',
-            marginBottom: '64px'
-          }}>
+      <footer style={{ backgroundColor: '#1F1F1F', color: 'white', padding: '60px 0 30px' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 20px' }}>
+          <div 
+            className="footer-grid"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '48px',
+              marginBottom: '48px'
+            }}
+          >
             {/* Brand */}
-            <div style={{ gridColumn: 'span 2' }} className="lg:col-span-1">
+            <div className="footer-brand" style={{ gridColumn: 'span 1' }}>
               <Image
                 src="/images/logo-without-bg.png"
                 alt="Lokizio"
@@ -1228,19 +1231,22 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div style={{
-            borderTop: '1px solid rgba(255,255,255,0.08)',
-            paddingTop: '32px',
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            gap: '20px'
-          }}>
+          <div 
+            className="footer-bottom"
+            style={{
+              borderTop: '1px solid rgba(255,255,255,0.08)',
+              paddingTop: '24px',
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              gap: '16px'
+            }}
+          >
             <p style={{ color: '#6B7280', fontSize: '14px' }}>
               © 2026 LOKIZIO. Tous droits réservés.
             </p>
-            <div style={{ display: 'flex', gap: '32px', fontSize: '14px', color: '#6B7280' }}>
+            <div className="footer-links" style={{ display: 'flex', gap: '24px', fontSize: '14px', color: '#6B7280' }}>
               <a href="#" style={{ color: '#6B7280', textDecoration: 'none' }}>Mentions légales</a>
               <a href="#" style={{ color: '#6B7280', textDecoration: 'none' }}>Confidentialité</a>
             </div>

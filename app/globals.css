@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,6 +34,7 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Heading Font */
@@ -581,6 +583,26 @@ h6,
   .btn-secondary {
     padding: 14px 28px;
     font-size: 14px;
+  }
+
+  /* Footer responsive styles */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .footer-brand {
+    grid-column: span 1 !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer-links {
+    justify-content: center;
   }
 }
 
