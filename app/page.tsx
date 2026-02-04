@@ -131,7 +131,7 @@ export default function HomePage() {
     },
     {
       step: 2,
-      title: "Ajout co-hôte Airbnb",
+      title: "Ajout en co-hôte (ex Airbnb)",
       description: "Vous nous ajoutez simplement comme co-hôte sur votre annonce",
       icon: Home
     },
@@ -297,33 +297,6 @@ export default function HomePage() {
           }}
         >
           <div className="animate-fade-in-up">
-            {/* Badge */}
-            <div style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '10px',
-              backgroundColor: 'white',
-              color: '#C4A052',
-              padding: '12px 24px',
-              borderRadius: '100px',
-              fontSize: '13px',
-              fontWeight: 500,
-              marginBottom: '36px',
-              border: '1px solid rgba(196, 160, 82, 0.25)',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase'
-            }}>
-              <span style={{
-                width: '8px',
-                height: '8px',
-                backgroundColor: '#C4A052',
-                borderRadius: '50%',
-                boxShadow: '0 0 0 3px rgba(196, 160, 82, 0.2)'
-              }} />
-              Conciergerie Airbnb
-            </div>
-
             <h1 className="heading-font" style={{
               fontSize: 'clamp(3rem, 5.5vw, 4.5rem)',
               fontWeight: 500,
@@ -660,7 +633,7 @@ export default function HomePage() {
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
                   <div style={{ width: '48px', height: '48px', borderRadius: '50%', overflow: 'hidden', border: '2px solid #C4A052' }}>
-                    <Image src="/images/IMG_2115.jpeg" alt="Maimouna" width={48} height={48} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <Image src="/images/director.jpeg" alt="Maimouna" width={48} height={48} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }} />
                   </div>
                   <div>
                     <p style={{ fontWeight: 600, color: '#2D2D2D', fontSize: '15px' }}>Maimouna</p>
@@ -712,7 +685,7 @@ export default function HomePage() {
               <div style={{ marginBottom: '36px' }}>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '16px' }}>
                   <span className="gold-gradient-text" style={{ fontSize: '3.5rem', fontWeight: 700, lineHeight: 1 }}>20%</span>
-                  <span style={{ color: '#6B7280', fontSize: '15px' }}>du CA Airbnb</span>
+                  <span style={{ color: '#6B7280', fontSize: '15px' }}>du CA du logement</span>
                 </div>
                 <div style={{
                   display: 'inline-flex',
@@ -1045,7 +1018,7 @@ export default function HomePage() {
                 boxShadow: '0 4px 20px rgba(0,0,0,0.03)'
               }}>
                 <div style={{ width: '70px', height: '70px', borderRadius: '50%', overflow: 'hidden', flexShrink: 0, border: '3px solid #C4A052' }}>
-                  <Image src="/images/IMG_2115.jpeg" alt="Maimouna" width={70} height={70} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <Image src="/images/director.jpeg" alt="Maimouna" width={70} height={70} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }} />
                 </div>
                 <div>
                   <p style={{ fontWeight: 600, color: '#2D2D2D', fontSize: '1.1rem' }}>Maimouna</p>
@@ -1140,7 +1113,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer style={{ backgroundColor: '#1F1F1F', color: 'white', padding: '60px 0 30px' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 20px' }}>
-          <div 
+          <div
             className="footer-grid"
             style={{
               display: 'grid',
@@ -1231,7 +1204,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div 
+          <div
             className="footer-bottom"
             style={{
               borderTop: '1px solid rgba(255,255,255,0.08)',
