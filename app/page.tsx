@@ -910,18 +910,11 @@ export default function HomePage() {
           </div>
 
           {/* Bento Grid Gallery */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gridTemplateRows: 'repeat(2, 220px)',
-            gap: '20px'
-          }} className="bento-grid">
+          <div className="bento-gallery">
             {/* Large Featured Image */}
             <div
               className="image-wrapper"
               style={{
-                gridColumn: 'span 2',
-                gridRow: 'span 2',
                 borderRadius: '28px',
                 cursor: 'pointer',
                 position: 'relative'
@@ -960,7 +953,8 @@ export default function HomePage() {
                   borderRadius: '24px',
                   cursor: 'pointer',
                   position: 'relative',
-                  gridColumn: index === 2 ? 'span 2' : 'span 1'
+                  // Only apply grid column span on desktop via media query if needed, 
+                  // but for now relying on globals.css class structure
                 }}
               >
                 <Image
@@ -1064,6 +1058,8 @@ export default function HomePage() {
             </div>
 
             {/* Contact Form */}
+            {/* Contact Form */}
+            {/*
             <div className="card" style={{ padding: '40px' }}>
               <h3 style={{ fontSize: '1.4rem', fontWeight: 600, color: '#2D2D2D', marginBottom: '32px' }}>
                 Envoyez-nous un message
@@ -1136,6 +1132,7 @@ export default function HomePage() {
                 </button>
               </form>
             </div>
+            */}
           </div>
         </div>
       </section>

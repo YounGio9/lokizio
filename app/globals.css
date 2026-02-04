@@ -321,6 +321,36 @@ h6,
   height: 40px !important;
 }
 
+/* Bento Grid Responsive */
+.bento-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bento-gallery .image-wrapper {
+  height: 300px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .bento-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 220px);
+  }
+
+  .bento-gallery .image-wrapper:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: auto;
+  }
+
+  .bento-gallery .image-wrapper:nth-child(4) {
+    grid-column: span 2;
+  }
+}
+
 /* Premium Pricing Card */
 .pricing-card {
   background: linear-gradient(145deg, var(--soft-white) 0%, var(--cream) 100%);
