@@ -160,20 +160,22 @@ export default function HomePage() {
         }}
       >
         {/* Top Section - Logo */}
-        <div style={{
-          textAlign: 'center',
-          padding: isScrolled ? '12px 32px 8px' : '36px 32px 16px',
-          transition: 'all 0.5s cubic-bezier(0.23, 1, 0.32, 1)',
-          borderBottom: '1px solid rgba(0,0,0,0.04)'
-        }}>
+        <div
+          className={isScrolled ? "header-logo-container scrolled" : "header-logo-container"}
+          style={{
+            textAlign: 'center',
+            transition: 'all 0.5s cubic-bezier(0.23, 1, 0.32, 1)',
+            borderBottom: '1px solid rgba(0,0,0,0.04)'
+          }}>
           <a href="#" style={{ display: 'inline-block' }}>
+            {/* Using a simpler approach for responsive image sizing via CSS class in globals.css */}
             <Image
               src="/images/logo-without-bg.png"
               alt="Lokizio"
-              width={300}
-              height={110}
+              width={200}
+              height={75}
+              className="logo-responsive"
               style={{
-                height: isScrolled ? '50px' : '110px',
                 width: 'auto',
                 transition: 'all 0.5s cubic-bezier(0.23, 1, 0.32, 1)'
               }}
@@ -256,7 +258,7 @@ export default function HomePage() {
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
-        paddingTop: '280px',
+        paddingTop: '220px',
         paddingBottom: '60px',
         background: 'linear-gradient(180deg, #FAF8F5 0%, #FAFAFA 100%)',
         position: 'relative',
